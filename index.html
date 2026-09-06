@@ -1,11 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pokedex</title>
+
+    <link rel="icon" href="./favicon-16x16.png">
+    <link rel="stylesheet" href="./style.css">
+
+    <title>Pokédex</title>
 </head>
 <body>
     
+    <main> 
+
+        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/shiny/448.gif" alt="pokemon" class="pokemon_imagem">
+        <img src="./pokedex4.png" alt="pokedex" class="pokedex">
+
+        <h1 class="pokemon_data">
+            <span class="pokemon_numero">488</span> -
+            <span class="pokemon_nome">lucario</span>
+        </h1>
+
+        <form class="form">
+            <input 
+            type="pesquisa"
+            class="input_pesquisa"
+            placeholder=" Nome ou ID"
+            required
+            />
+        </form>
+
+        <div class="buttons">
+            <button class="button btn-voltar">Voltar</button>
+            <button class="button btn-próximo">Próximo</button>
+        </div>
+
+    </main>
+
 </body>
 </html>
