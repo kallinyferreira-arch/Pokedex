@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oxanium', cursive;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(to bottom, rgb(150, 150, 10), rgba(145, 117, 117, 0.623));
+    min-height: 100vh;
+    padding: 5%;
+}
+
+main {
+    display: block;
+    width: 100%;
+    max-width: 425px;
+    margin: 2% auto 0;
+    position: relative;
+}
+
+.pokedex {
+    display: block;
+    width: 100%;
+}
+
+.pokemon_imagem {
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 65%;
+    height: 23%;
+    object-fit: contain;
+}
+
+.pokemon_data {
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto 15px;
+    position: absolute;
+    font-weight: 600;
+    color: black;
+    top: 1%;
+    right: 0%;
+    z-index: 2;
+}
+
+.pokemon_nome {
+    text-transform: capitalize;
+}
+
+.form {
+    position: absolute;
+    width: 70%;
+    top: 83%;
+    left: 5%;
+}
+
+.input_pesquisa {
+    width: 40%;
+    padding: 0%;
+    outline: none;
+    border: 2px solid #333;
+    border-radius: 2px;
+    font-weight: 600;
+    color: black;
+    font-size: clamp(8px, 5vw, 1rem);
+    box-shadow: -2px 4px 0 #888, -3px 5px 0 #333;
+}
+
+.buttons {
+    position: absolute;
+    bottom: 0;
+    left: 54%;
+    width: 65%;
+    transform: translateX(-57%);
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+}
+
+.button {
+    width: 50%;
+    padding: 4px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    font-size: clamp(8px, 5vw, 1rem);
+    font-weight: 600;
+    color: white;
+    background-color: #444;
+    box-shadow: -4px 3px 0 #222, -4px 6px 0 #000;
+}
+
+.button:active {
+    box-shadow: inset -4px 4px 0 #222;
+    font-size: 0.9rem;
+}                    
